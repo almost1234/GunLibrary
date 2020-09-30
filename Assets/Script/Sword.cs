@@ -10,12 +10,12 @@ public class Sword : BaseWeapon
     {
         Gizmos.DrawCube(transform.position, boxScale);
     }
-    protected override void AttackMethod()
+    public override void AttackMethod()
     {
         //insert animation for sword to swing
     }
 
-    protected override void IdleMethod()
+    public override void IdleMethod()
     {
        
     }

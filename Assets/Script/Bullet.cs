@@ -25,7 +25,8 @@ public class Bullet : MonoBehaviour
         if (other.attachedRigidbody != null) 
         {
 
-            other.attachedRigidbody.AddForceAtPosition(Vector3.forward * 200f, other.ClosestPointOnBounds(transform.position));
+            other.attachedRigidbody.AddForceAtPosition(Vector3.right * 200f, other.ClosestPointOnBounds(transform.position));
+            Destroy(this);
         }
         
     }
